@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark for 5 fav websites</title>
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#EAF6FF,#F9F7FF,#FFF8F2);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:80%;
+    max-width:900px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.12);
+    text-align:center;
+}
+
+h1{
+    color:#4B5D67;
+    margin-bottom:35px;
+    font-size:2.2rem;
+    letter-spacing:1px;
+}
+
+.bookmarks{
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.bookmarks a{
+    text-decoration:none;
+}
+
+.bookmarks img{
+    width:120px;
+    height:120px;
+    border-radius:18px;
+    padding:10px;
+    background:#ffffff;
+    box-shadow:0 8px 18px rgba(0,0,0,0.12);
+    transition:0.35s ease;
+}
+
+.bookmarks img:hover{
+    transform:translateY(-10px) scale(1.08);
+    box-shadow:0 15px 30px rgba(137,181,255,0.35);
+}
+
+.website-name{
+    margin-top:10px;
+    color:#555;
+    font-weight:500;
+    font-size:16px;
+}
+
+footer{
+    margin-top:35px;
+    color:#888;
+    font-size:14px;
+}</style>
+</head>
+<body>
+    <div class="container">
+    <h1>My Top 5 Fav and Most Used Websites</h1>
+    <div class="bookmarks">
+    <a href="https://www.youtube.com/" target="_blank"><img height="120" width="120" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQybqjRw3sd6z8xJoVAGrLGRhSaJmZ_dnN9XEs4zGpoPg&s=10" alt=""></a>
+    <a href="https://open.spotify.com/" target="_blank"><img height="120" width="120" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvZ3hNbBrr63a2WsrDQL-ryFaCBM3uhe3X2SV38pp2Bw&s=10" alt=""></a>
+    <a href="https://leetcode.com/" target="_blank"><img height="120" width="120" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ4ulClknxE-0lkWOnnJUVRMUzNLU94ty8basAlDtkig&s" alt=""></a>
+    <a href="https://github.com/" target="_blank"><img height="120" width="120" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0b3lHiw4nRofurtfgr5sNPiXl4dY7doUcwo6HwjyUkQ&s=10" alt=""></a>
+    <a href="https://net77.cc/home" target="_blank"><img height="120" width="120" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgn2v6uTOBy-YBeO5gSlQD1Nu52dUJagI-VzKLYGTsFA&s=10" alt=""></a>
+    </div>
+    <footer>
+        <h4>🪄click on the icon to open the website.</h4>
+    </footer>
+</div>
+</body>
+</html>
