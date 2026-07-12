@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix- the world on your screen!</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #141414;
+    color: white;
+}
+
+/* Header */
+header{
+    background-color: black;
+    padding: 15px 50px;
+    box-shadow: 0 2px 10px rgba(229,9,20,0.4);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+nav h1{
+    color: #E50914;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Main Section */
+main{
+    padding: 50px;
+}
+
+/* Movie Container */
+main div{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Movie Cards */
+main div img{
+    width: 300px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+main div img:hover{
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(229,9,20,0.7);
+}
+
+/* Movie Links */
+main div a{
+    display: block;
+    width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #E50914;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+main div a:hover{
+    background-color: white;
+    color: #E50914;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: #b3b3b3;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    header{
+        padding: 20px;
+    }
+
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav h1{
+        font-size: 1.5rem;
+    }
+
+    main{
+        padding: 20px;
+    }
+
+    main div img,
+    main div a{
+        width: 90%;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <img src="data:image/jpeg;base64,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" alt="Netflix-logo" height="100" width="150">
+        <h1>Netflix- the world on your screen</h1>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4icce5c9Q55zr_G3N2jXxTXS2FppiqSlDPjpp-O1Brg&s=10" alt="" height="320" width="450">
+            <a href="https://www.netflix.com/in/title/81024821">3 Bloody Problem <br><br><br><br><br>
+                <p>The “3 Bloody Problems” on Netflix is a gritty Indian crime‑thriller series that dives into the chaos of urban corruption and moral conflict.</p>
+            </a>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVT0hnFddINGBjG9aqb1LYSp396ZlZAsjACFaee-byKw&s=10" alt="" height="320" width="450">
+            <a href="https://www.netflix.com/in/title/81061734">Sweet Home<br><br><br><br><br>
+            <p>Sweet Home is about survival against monstrous transformations in a horror setting</p></a>
+        </div>
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx-_Xa_O_8iIlQiQPRBV7D6o0dmdHU8lpWZ7CRHgzDaQ&s=10" alt="" height="400" width="400">
+            <a href="https://www.netflix.com/in/title/81713952">Bet<br><br><br><br><br>
+            <p>Bet on Netflix is a Canadian teen psychological thriller series set in an elite boarding school where underground gambling dictates power and status.</p></a>
+        </div>
+    </main>
+    <footer>
+        copyrights@ Netflix all rights preserved
+    </footer>
+</body>
+</html>
